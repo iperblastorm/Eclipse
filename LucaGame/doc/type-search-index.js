@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"main","l":"App"},{"p":"Connection","l":"Connection"},{"p":"Interface","l":"InterfacciaPrincipale"},{"p":"Interface","l":"SchermataInventario"},{"p":"Interface","l":"SchermataPersonaggio"},{"p":"Interface","l":"SchermataSkill"},{"p":"Interface","l":"SchermataTalenti"}];updateSearchResults();

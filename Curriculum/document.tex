@@ -1,0 +1,272 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass{article}
+
+\usepackage[a4paper,
+			left= 1cm,
+			top= 1cm,
+			right= 1cm,
+			bottom= 1cm]{geometry}
+
+\usepackage{ragged2e}
+
+\newenvironment{listaIdentazione}[1]{
+			\begin{list}{}{
+			  \setlength{\leftmargin}{#1} % rientro sx
+			  \setlength{\itemsep}{0pt}	% rimuove spazi extra tra elementi
+			  \setlength{\parskip}{0pt} % rimuove spazi tra paragrafi
+			  \setlength{\parsep}{0pt} % rimuove spazi tra paragrafi
+			  \setlength{\labelwidth}{0pt} % rimuove spazio simbolo
+			  \setlength{\labelsep}{0pt} % rimuove spazio label testo
+			  \renewcommand{\makelabel}[1]{} % rimuove il simbolo
+			  }
+			}{\end{list}}
+
+\newcommand{\spaziocorto}{\\[0.1cm]}
+\newcommand{\spaziolungo}{\\[0.3cm]}
+\newcommand{\spaziopiulungo}{\\[0.8cm]}
+
+\begin{document}
+\vspace{-0.2cm}
+\begin{flushleft}
+	\textbf{\Huge{Rosadi Luca}}
+	\spaziocorto
+	\textbf{\Large{Sansepolcro,\Large{AR}}}
+	\spaziolungo
+	\textbf{\Large{Contatti}}
+		\spaziocorto
+		\textbf{\Large{Email: Rosadi.luca90@outlook.it}}
+		\spaziocorto
+		\textbf{\Large{Linkedin: }}
+		\spaziocorto
+		\textbf{\Large{GitHub: https://github.com/iperblastorm/Workplace}}
+		\spaziocorto
+\end{flushleft}
+
+\hrule
+
+\begin{center}
+\section*{\LARGE{Presentazione}}
+\end{center}
+\begin{flushleft}
+	\textbf{\Large{A 35 anni, mi porto dietro un grande bagaglio di esperienze
+	professionali, ho deciso di intraprendere un nuovo percorso spinto dalla mia
+	passione per l'informatica e dalla voglia di investire in me stesso. Sono uno
+	studente di Informatica con una forte motivazione ad entrare nel settore. Sono
+	estremamente curioso e rapido nell' apprendimento di nuove competenze. Ho già
+	avuto modo di operare in una grande azienda dove sono stato addestrato da
+	veterani del settore commerciale "come ispettore commerciale" ad essere
+	versatile e proattivo, sono comunque consapevole di essere alle prime armi nel
+	settore.}}
+\end{flushleft}
+
+\hrule
+
+\section*{\LARGE{Istruzione}}
+\begin{flushleft}
+		\textbf{\Large{Università}}
+		\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item{\textbf{\Large{Università degli Studi di Perugia}}}
+			\spaziocorto
+			\item {\textbf{\Large{Corso di Laurea in Informatica}}}
+			\item {\textbf{\Large{Anno: 2024 - ad oggi}}}
+			\spaziolungo
+			\end{listaIdentazione}
+		\textbf{\Large{Istituto Professionale}}
+		\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item{\textbf{\Large{IPSSARCT Felice Cavallotti, Città di Castello}}}
+			\spaziocorto
+			\item \textbf{\Large{Anno: 2007 - 2012}}
+			\spaziocorto
+			\item \textbf{\Large{Tecnico dei servizi della Ristorazione,Commerciali e
+			Turistici}}
+			\spaziocorto
+			\end{listaIdentazione}
+\end{flushleft}
+\hrule
+\section*{\LARGE{Competenze}}
+\begin{flushleft}
+		\textbf{\Large{Linguaggi di Programmazione}}
+		\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item{\textbf{\Large{C (Università), Java (Università), Python (Base),
+			Android (Base)}}}
+			\spaziocorto
+			\end{listaIdentazione}
+						
+		\textbf{\Large{Database}}
+		\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item{\textbf{\Large{Mysql}}}
+			\spaziocorto
+			\end{listaIdentazione}
+			
+		\textbf{\Large{Strumenti}}
+		\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item{\textbf{\Large{Git, Docker, Eclipse IDE, VS Code}}}
+			\spaziocorto
+			\end{listaIdentazione}
+			
+		\textbf{\Large{Soft Skills}}
+		\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item{\textbf{\Large{Problem-solving tramite ricerca e acquisizione di nuove conoscenze, Team Working, Apprendimento Rapido, }}}
+			\spaziocorto
+			\end{listaIdentazione}
+\end{flushleft}
+
+\hrule
+
+\section*{\LARGE{Progetti Personali}}
+	\begin{flushleft}
+		\textbf{\Large{Titolo: }}
+		\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item {\textbf{\Large{Descrizione: }}}
+			\spaziocorto
+			\item {\textbf{\Large{Tecnologie: }}}
+			\spaziocorto
+			\item {\textbf{\Large{Link: }}}
+			\spaziolungo
+			\end{listaIdentazione}
+\end{flushleft}
+
+\hrule
+
+\section*{\LARGE{Esperienze Lavorative}}
+	\begin{flushleft}
+	
+		\textbf{\Large{Ruolo: Gastronomo }}
+			\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item {\textbf{\Large{Azienda: L'abbondanza S.R.L}}}
+			\spaziocorto
+			\item {\textbf{\Large{Periodo di impiego: 2024 - 2025}}}
+			\spaziocorto
+			\item {\textbf{\Large{Competenze Acquisite: Risoluzione rapida
+			di problematiche e imprevisti in tempo reale, mantenendo la
+			calma e la professionalità anche sotto pressione, Gestione diretta delle
+			relazioni con il cliente}}}
+			\spaziopiulungo
+			\end{listaIdentazione}
+			
+		\textbf{\Large{Ruolo: Addetto alla supervisione dell'organizzazione del
+		negozio }}
+			\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item {\textbf{\Large{Azienda: D.M.L SPA}}}
+			\spaziocorto
+			\item {\textbf{\Large{Periodo di impiego: 2023 - 2024}}}
+			\spaziocorto
+			\item {\textbf{\Large{Competenze Acquisite}}}
+			\spaziolungo
+			\item {\textbf{\Large{Rapida acquisizione delle procedure aziendali: Ho
+			appreso e padroneggiato tutte le procedure operative e organizzative di
+			Direzione, Magazzino, Area Vendita in 6 mesi, convalidando
+			le competenze acquisite tramite un esame interno con l'Ufficio del Personale}}}
+			\spaziolungo
+			\item {\textbf{\Large{Supporto organizzativo e approccio "hands-on": Ho
+			contribuito attivamente all' organizzazione delle attività e alla gestione
+			quotidiana del punto vendita, dimostrando proattività e versatilità nel
+			ricoprire sia ruoli di coordinamento che operativi, ove necessario }}}
+			\spaziopiulungo
+			\end{listaIdentazione}
+			
+		\textbf{\Large{Ruolo: Ispettore Commerciale}}
+			\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item {\textbf{\Large{Azienda: EurospinTirrenica SPA }}}
+			\spaziocorto
+			\item {\textbf{\Large{Periodo di impiego: 2017 - 2023}}}
+			\spaziocorto
+			\item {\textbf{\Large{Competenze Acquisite}}}
+			\spaziolungo
+			\item {\textbf{\Large{Interfaccia Utente-IT e Miglioramento Software:
+			Utilizzo quotidiano di gestionali interni per le operazioni commerciali e
+			supporto ai colleghi nell'adozione dei programmi. Ho fornito feedback diretto
+			al team IT per migliorare la user-experience e ottimizzare le funzionalità,
+			con una forte sensibilità verso la creazione di software user-friendly.}}}
+			\spaziolungo
+			\item {\textbf{\Large{Analisi Commerciale e Processi Operativi: Acquisizione
+			di una solida conoscenza dei processi commerciali e delle dinamiche di
+			business, con esperienza pratica nell'analisi di inventari, gestione costi
+			del personale, formulazione ricette per reparto e valutazione costi-ricavi,
+			fornendo una prospettiva "business-oriented" alle sfide operative.}}}
+			\spaziopiulungo
+			\end{listaIdentazione}
+			
+		\textbf{\Large{Ruolo: Aiuto Cuoco }}
+			\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item {\textbf{\Large{Azienda: ALM s.r.l }}}
+			\spaziocorto
+			\item {\textbf{\Large{Periodo di impiego: 2014 - 2015}}}
+			\spaziocorto
+			\item {\textbf{\Large{Competenze Acquisite}}}
+			\spaziolungo
+			\item {\textbf{\Large{Formato direttamente dallo Chef per la sua sostituzione durante le ferie programmate, assicurando la piena operatività e l'efficienza della cucina.}}}
+			\spaziolungo
+    		\item {\textbf{\Large{Ho organizzato e coordinato la squadra in cucina, ottimizzando i flussi di lavoro e la distribuzione dei compiti per massimizzare la produttività.}}}
+    		\spaziolungo
+    		\item {\textbf{\Large{Ho collaborato attivamente alla stesura e all'aggiornamento dei menu, contribuendo allo sviluppo di nuove proposte culinarie.}}}
+    		\spaziolungo
+    		\item {\textbf{\Large{Ho appreso in totale autonomia l'utilizzo del software di cassa \textbf{Fata Le Touch},aiutando a gestire le operazioni di front-office relative agli incassi.}}}
+    		\spaziopiulungo
+			\end{listaIdentazione}
+			
+		\textbf{\Large{Altre Esperienze Lavorative}}
+			\spaziocorto
+			\begin{listaIdentazione}{0.5cm}
+			\item {\textbf{\Large{Azienda: Hotel Gio Jazz e Wine - Periodo: 2015 - 2017}}}
+			\spaziocorto
+			\item {\textbf{\Large{Azienda: C'era una volta SNC - Periodo: 2011 - 2013}}}
+			\spaziocorto
+			\item {\textbf{\Large{Azienda: Ristorante Trattoria La Ripa - Periodo: 2010 - 2011}}}
+			\spaziocorto
+			\item {\textbf{\Large{Azienda: Pasticceria Cecchetti SNC - Periodo: 2009 - 2010}}}
+			\spaziopiulungo
+			\end{listaIdentazione}
+
+\end{flushleft}
+
+\hrule
+
+\section*{\LARGE{Lingue}}
+	\begin{itemize}
+	  \item {\Large{\textbf{Italiano: Madrelingua}}}
+	  \vspace {0.2cm}
+	  \item {\Large{\textbf{Inglese}}}
+	  \begin{itemize}
+	    \item {\Large{\textbf{Comprensione: Molto Buono}}}
+	    \item {\Large{\textbf{Scritto: Buono}}}
+	    \item {\Large{\textbf{Parlato: Buono}}}
+	    \end{itemize}
+	\end{itemize}
+	
+\hrule
+
+\section*{\LARGE{Interessi}}
+	\begin{itemize}
+	\item \Large{\textbf{Programmazione:} Appassionato di programmazione autodidatta (in particolare \textbf{Python}
+	e sviluppo \textbf{Android}), interesse che mi ha motivato all'iscrizione universitaria.}
+  	\item \Large{\textbf{Gaming:} Amo gli MMORPG online per il loro aspetto strategico e di ruolo, comprendendo l'importanza delle diverse classi e specializzazioni.}
+  	\item \Large{\textbf{Realtà Aumentata e Nuove Tecnologie:} Interesse precoce per la Realtà Aumentata 
+  	(giocatore beta di \textbf{Ingress}) e costante curiosità per le nuove frontiere tecnologiche.}
+	\end{itemize}
+
+\hrule
+
+\vspace{0.2cm}
+\normalsize
+\begin{center}
+Curriculum Redatto con LaTex.
+\end{center}
+
+\vspace{1cm}
+\normalsize
+Autorizzo il trattamento dei miei dati personali presenti nel curriculum vitae ai sensi dell’art. 13 del Regolamento UE 2016/679 (GDPR).
+
+\end{document}
