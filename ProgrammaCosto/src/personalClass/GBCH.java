@@ -27,29 +27,35 @@ public class GBCH extends GridBagConstraints {
 				
 	}
 	
-	public 	GBCH grid(int width, int height) {
+	public GBCH modifiyxy(int x, int y) {
+		this.gridx = x;
+		this.gridy = y;
+		return this;
+	}
+	
+	public 	GBCH modifygrid(int width, int height) {
 		this.gridwidth = width;
 		this.gridheight = height;
 		return this;
 	}
 	
-	public GBCH weightxY(double weightx,double weighty) {
+	public GBCH modifyweight(double weightx,double weighty) {
 		this.weightx = weightx;
 		this.weighty = weighty;
 		return this;
 	}
 	
-	public GBCH anchor(int anchor) {
+	public GBCH modifyanchor(int anchor) {
 		this.anchor = anchor;
 		return this;
 	}
 	
-	public GBCH fill(int fill) {
+	public GBCH modifyfill(int fill) {
 		this.fill = fill;
 		return this;
 	}
 	
-	public GBCH insets(int top, int left, int bottom, int right) {
+	public GBCH modifyinsets(int top, int left, int bottom, int right) {
 		this.insets = new Insets(top, left, bottom, right);
 		return this;
 	}
